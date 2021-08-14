@@ -1,12 +1,13 @@
 # SmartBooks
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
-Make sure you have latest NodeJS and Latest Angular CLI Installed on your machine.
+- This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
+- Make sure you have latest NodeJS and Latest Angular CLI Installed on your machine.
 
 ## Development server
 
-Run `npm Install` first (one time activity only) and then, 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Run `npm Install` first (one time activity only) and then, 
+- Run `ng serve` for a dev server. 
+- Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Build
 
