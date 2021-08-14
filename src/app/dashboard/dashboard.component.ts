@@ -19,6 +19,8 @@ export class DashboardComponent implements OnInit {
 
   private loadBooks() {
     if (!this.sharedService.gBookList) {
+
+      // Load the book list using service
       this.bookService.getBookList().subscribe((data) => {
         if (data) {
           this.sharedService.gBookList = data;

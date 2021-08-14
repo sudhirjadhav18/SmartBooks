@@ -15,6 +15,7 @@ export class BookCardComponent implements OnInit {
   ngOnInit(): void {}
 
   public openBook() {
+    // Open Modal for Book details
     const modalRef = this.modalService.open(BookInfoComponent, { size: 'lg' });
     modalRef.componentInstance.book = this.book;
   }

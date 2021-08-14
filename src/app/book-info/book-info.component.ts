@@ -13,6 +13,7 @@ export class BookInfoComponent implements OnInit {
   constructor(public activeModal: NgbActiveModal) {}
 
   ngOnInit(): void {
+    // Incrementing the Views count as soon as Modal opens
     this.book.Views = +this.book.Views + 1;
   }
 
@@ -22,6 +23,7 @@ export class BookInfoComponent implements OnInit {
         this.book.Comments = [];
       }
 
+      // add comment and clear the textarea
       this.book.Comments.push(this.bookComment);
 
       this.bookComment = '';

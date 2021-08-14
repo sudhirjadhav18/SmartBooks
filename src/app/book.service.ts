@@ -10,6 +10,7 @@ export class BookService {
   constructor(private http: HttpClient) {}
 
   public getBookList() {
+    // Http API Call simulator
     return this.http.get(this.booksDbURL);
   }
 }
