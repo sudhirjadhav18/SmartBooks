@@ -1,0 +1,30 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{ book.Name }}</h4>
+</div>
+<div class="modal-body">
+    <div class="card-img"></div>
+    <p>{{ book.Description }}</p>
+    <div class="comments margin-bottom">
+        <form>
+            <div>
+                <textarea name="txtComment" [(ngModel)]="bookComment"
+                    class="form-control txt-comment margin-bottom"></textarea>
+            </div>
+            <button type="button" class="btn btn-dark btn-sm" (click)="addComment()">
+                Add Comment
+            </button>
+        </form>
+    </div>
+    <div class="comment-list">
+        <ul class="list-group">
+            <li *ngFor="let commentItem of book.Comments" class="list-group-item">
+                {{ commentItem }}
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">
+        Close
+    </button>
+</div>
